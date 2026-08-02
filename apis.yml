@@ -1,8 +1,24 @@
 aid: sweetgreen
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sweetgreen.png
 name: Sweetgreen
-description: 'Sweetgreen is a company surfaced as a portfolio company of d1-capital, true-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: food. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Sweetgreen is a fast-casual restaurant company (NYSE: SG) building healthy, plant-forward
+  food through a network of company-owned locations and its digital ordering platform. It reaches customers
+  primarily via its consumer website and mobile app for pickup, delivery, and its Sweetgreen Rewards loyalty
+  program, and operates automated "Infinite Kitchen" locations. As of this enrichment pass, Sweetgreen
+  publishes no public developer API, developer portal, or machine-readable API specifications; this profile
+  captures its public web presence and probed domain-security posture only. Backed by D1 Capital and True
+  Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/sweetgreen/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Food
+- Restaurants
+- Food Delivery
+- Loyalty
+- Consumer
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sweetgreen-domain-security.yml
 - type: Website
   url: https://www.sweetgreen.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
